@@ -3,7 +3,7 @@
 
 
     class Task:
-    def __init__(self, task_name, date, completed=False):
+     def __init__(self, task_name, date, completed=False):
         self.task_name = task_name
         self.date = date
         self.completed = completed
