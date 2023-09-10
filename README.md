@@ -2,13 +2,13 @@
 
 
 
-class Task:
+    class Task:
     def __init__(self, task_name, date, completed=False):
         self.task_name = task_name
         self.date = date
         self.completed = completed
 
-class TaskManager:
+    class TaskManager:
     def __init__(self):
         self.tasks = []
 
@@ -33,10 +33,10 @@ class TaskManager:
     def delete_task(self, task_name, date):
         self.tasks = [task for task in self.tasks if not (task.task_name == task_name and task.date == date)]
 
-# Sample usage:
-task_manager = TaskManager()
+    # Sample usage:
+    task_manager = TaskManager()
 
-while True:
+    while True:
     print("Options:")
     print("1. Add Task")
     print("2. Update Task Completion Status")
